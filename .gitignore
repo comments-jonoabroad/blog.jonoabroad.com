@@ -1,0 +1,12 @@
+site
+site.hi
+site.o
+
+_cache
+_site
+
+.stack-work
+
+.cabal-sandbox
+cabal.sandbox.config
+dist

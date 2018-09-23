@@ -1,0 +1,30 @@
+# Getting Started
+
+## Commands
+```  
+cabal sandbox init
+cabal2nix --shell . > default.nix
+nix-shell 
+cabal run watch
+```
+or 
+
+```
+cabal sandbox init
+cabal2nix --shell . > default.nix
+nix-shell 
+ghc --make site.hs
+./site rebuild
+``` 
+
+## References
+
+ * https://jaspervdj.be/hakyll/tutorials/01-installation.html
+
+
+# Deployment
+
+```
+aws --profile blog.jonoabroad.com s3 cp _site/ s3://blog.jonoabroad.com/ --recursive  --acl  public-read
+
+```
